@@ -1,5 +1,6 @@
 import { Search, Globe, Menu, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -32,6 +33,11 @@ const Header = () => {
             <Button variant="ghost" size="sm" className="hidden md:flex">
               Airbnb your home
             </Button>
+            <Link to="/contact-us">
+              <Button variant="ghost" size="sm" className="hidden md:flex">
+                Contact
+              </Button>
+            </Link>
             <Button variant="ghost" size="sm">
               <Globe className="h-4 w-4" />
             </Button>
